@@ -1,1 +1,6 @@
 .none{display: none;}
+.category-header-menu{
+    display: inline-block;
+    margin: 10px 5px;
+    text-align: center;
+}

@@ -1,15 +1,10 @@
 $.ajaxSetup({cache: false});
 
-$(function () {
-    commFunc.setFun.pageReady();
-});
-
 var commFunc = (function () {
     var setFun = {
 
         getLocale: function () {
             var locale = $("#locale").text();
-            console.log(locale);
             setFun.setLocale(locale);
         },
 
@@ -42,3 +37,6 @@ var commFunc = (function () {
     }
 })();
 
+$(function () {
+    commFunc.setFun.pageReady();
+});

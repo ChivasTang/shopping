@@ -9,34 +9,49 @@
 
     <title>SHOPPING | 2019</title>
 
-    <link type="text/css" rel="stylesheet" href="/static/css/lib/kendo/kendo.common-nova.min.css" media="all"/>
-    <link type="text/css" rel="stylesheet" href="/static/css/lib/kendo/kendo.nova.min.css" media="all"/>
-    <link type="text/css" rel="stylesheet" href="/static/css/lib/kendo/kendo.mobile.nova.min.css" media="all"/>
+    <link type="text/css" rel="stylesheet" href="/static/css/lib/kendo/kendo.common.min.css" media="all"/>
+    <link type="text/css" rel="stylesheet" href="/static/css/lib/kendo/kendo.rtl.min.css" media="all"/>
+    <link type="text/css" rel="stylesheet" href="/static/css/lib/kendo/kendo.silver.min.css" media="all"/>
+    <link type="text/css" rel="stylesheet" href="/static/css/lib/kendo/kendo.mobile.all.min.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="/static/css/common.css" media="all"/>
 
     <script type="text/javascript" src="/static/js/lib/jquery.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/static/js/lib/jszip.min.js" charset="UTF-8"></script>
     <script type="text/javascript" src="/static/js/lib/jquery.i18n.properties.min.js" charset="UTF-8"></script>
     <script type="text/javascript" src="/static/js/lib/kendo.all.min.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="/static/js/lib/kendo.mobile.min.js" charset="UTF-8"></script>
     <script type="text/javascript" src="/static/js/common.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="/static/js/index.js" charset="UTF-8"></script>
     <link rel="icon" type="image/x-icon" href="/static/image/favicon.ico"/>
 </head>
 <body>
 <div id="locale" class="none" th:text="${locale}"></div>
-<div class="container">
-    <div class="k-header">
-        <div class="k-header-btn-group">
-            <a data-role="button" data-animated="true" class="km-widget km-button"><span class="km-text">大分類1</span></a>
-        </div>
-        <div class="k-header-btn-group">
-            <a data-role="button" data-animated="true" class="km-widget km-button"><span class="km-text">大分類2</span></a>
-        </div>
-    </div>
-    <div class="k-content">
-        Hello This is content
-    </div>
-<!--    <div class="k-footer">Hello This is footer</div>-->
+<div class="category-header-menu" data-role="view">
+    <a id="category-btn-1" data-role="button" data-click="goCategory1">大分類1</a>
+    <a id="category-btn-2" data-role="button" data-click="goCategory2">大分類2</a>
 </div>
+
+<div data-role="view">
+    <ul data-role="listview" data-source="foo" data-load-more="true" data-template="foo-template">
+        <script type="text/x-kendo-template" id="foo-template">
+            "大分類1の" - #: shopName #
+        </script>
+    </ul>
+</div>
+
+
+
+<script type="text/javascript">
+    var app = new kendo.mobile.Application();
+    var data=[];
+    for(var i=0;i<500;i++){
+        data.push({shopId:i,shopName:+"販売店"+i});
+    }
+    // datasource below is customized for demo purposes.
+    var foo = new kendo.data.DataSource({
+        data:data
+    });
+
+    // new kendo.mobile.Application();
+
+</script>
 </body>
 </html>
