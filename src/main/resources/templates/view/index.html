@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+
+    <title>SHOPPING | 2019</title>
+
+    <link type="text/css" rel="stylesheet" href="/static/css/lib/kendo/kendo.common-nova.min.css" media="all"/>
+    <link type="text/css" rel="stylesheet" href="/static/css/lib/kendo/kendo.nova.min.css" media="all"/>
+    <link type="text/css" rel="stylesheet" href="/static/css/lib/kendo/kendo.mobile.nova.min.css" media="all"/>
+    <link type="text/css" rel="stylesheet" href="/static/css/common.css" media="all"/>
+
+    <script type="text/javascript" src="/static/js/lib/jquery.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/static/js/lib/jquery.i18n.properties.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/static/js/lib/kendo.all.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/static/js/lib/kendo.mobile.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/static/js/common.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/static/js/index.js" charset="UTF-8"></script>
+    <link rel="icon" type="image/x-icon" href="/static/image/favicon.ico"/>
+</head>
+<body>
+<div id="locale" class="none" th:text="${locale}"></div>
+<div class="container">
+    <div class="k-header">
+        <div class="k-header-btn-group">
+            <a data-role="button" data-animated="true" class="km-widget km-button"><span class="km-text">大分類1</span></a>
+        </div>
+        <div class="k-header-btn-group">
+            <a data-role="button" data-animated="true" class="km-widget km-button"><span class="km-text">大分類2</span></a>
+        </div>
+    </div>
+    <div class="k-content">
+        Hello This is content
+    </div>
+<!--    <div class="k-footer">Hello This is footer</div>-->
+</div>
+</body>
+</html>

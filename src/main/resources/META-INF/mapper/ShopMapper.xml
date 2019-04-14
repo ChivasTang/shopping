@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.flystone.shopping.dao.ShopDao" >
+  <resultMap id="BaseResultMap" type="com.flystone.shopping.entity.domain.ShopDomain" >
+    <result column="SHOP_ID" property="shopId" jdbcType="BIGINT" />
+    <result column="CATEGORY_ID" property="categoryId" jdbcType="BIGINT" />
+    <result column="SHOP_NAME" property="shopName" jdbcType="VARCHAR" />
+    <result column="ADD_USER" property="addUser" jdbcType="VARCHAR" />
+    <result column="ADD_DATE" property="addDate" jdbcType="TIMESTAMP" />
+    <result column="UP_USER" property="upUser" jdbcType="VARCHAR" />
+    <result column="UP_DATE" property="upDate" jdbcType="TIMESTAMP" />
+    <result column="DEL_KBN" property="delKbn" jdbcType="BIT" />
+  </resultMap>
+</mapper>

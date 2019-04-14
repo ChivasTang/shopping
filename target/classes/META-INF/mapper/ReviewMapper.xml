@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.flystone.shopping.dao.ReviewDao" >
+  <resultMap id="BaseResultMap" type="com.flystone.shopping.entity.domain.ReviewDomain" >
+    <result column="REVIEWER_ID" property="reviewerId" jdbcType="BIGINT" />
+    <result column="GOOD_ID" property="goodId" jdbcType="BIGINT" />
+    <result column="REVIEW_SCORE_1" property="reviewScore1" jdbcType="TINYINT" />
+    <result column="REVIEW_SCORE_2" property="reviewScore2" jdbcType="TINYINT" />
+    <result column="REVIEW_SCORE_3" property="reviewScore3" jdbcType="TINYINT" />
+    <result column="REVIEW_SCORE_4" property="reviewScore4" jdbcType="TINYINT" />
+    <result column="REVIEW_SCORE_5" property="reviewScore5" jdbcType="TINYINT" />
+    <result column="COMMENT" property="comment" jdbcType="LONGVARCHAR" />
+    <result column="ADD_USER" property="addUser" jdbcType="VARCHAR" />
+    <result column="ADD_DATE" property="addDate" jdbcType="TIMESTAMP" />
+    <result column="UP_USER" property="upUser" jdbcType="VARCHAR" />
+    <result column="UP_DATE" property="upDate" jdbcType="TIMESTAMP" />
+    <result column="DEL_KBN" property="delKbn" jdbcType="BIT" />
+  </resultMap>
+
+</mapper>

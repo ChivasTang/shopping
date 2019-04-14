@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.flystone.shopping.dao.ModelPictureDao" >
+  <resultMap id="BaseResultMap" type="com.flystone.shopping.entity.domain.ModelPictureDomain" >
+    <result column="PICTURE_ID" property="pictureId" jdbcType="BIGINT" />
+    <result column="GOOD_ID" property="goodId" jdbcType="BIGINT" />
+    <result column="TITLE" property="title" jdbcType="VARCHAR" />
+    <result column="DESCRIPTION" property="description" jdbcType="LONGVARCHAR" />
+    <result column="PICTURE_DEST" property="pictureDest" jdbcType="VARCHAR" />
+    <result column="ADD_USER" property="addUser" jdbcType="VARCHAR" />
+    <result column="ADD_DATE" property="addDate" jdbcType="TIMESTAMP" />
+    <result column="UP_USER" property="upUser" jdbcType="VARCHAR" />
+    <result column="UP_DATE" property="upDate" jdbcType="TIMESTAMP" />
+    <result column="DEL_KBN" property="delKbn" jdbcType="BIT" />
+  </resultMap>
+
+</mapper>
