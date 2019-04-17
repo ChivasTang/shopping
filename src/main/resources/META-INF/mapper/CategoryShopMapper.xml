@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.flystone.shopping.dao.CategoryShopDao" >
+
+    <select id="getCategoryShopList"
+            parameterType="com.flystone.shopping.domain.CategoryShopDomain"
+            resultType="com.flystone.shopping.domain.CategoryShopDomain">
+        SELECT
+            ms.SHOP_ID AS shopId
+            ,ms.SHOP_NAME AS shopName
+            ,ms.CATEGORY_ID AS categoryId
+            ,mc.CATEGORY_NAME AS categoryName
+        FROM m_shop AS ms
+        INNER JOIN m_category AS mc ON ms.CATEGORY_ID=mc.CATEGORY_ID
+        WHERE ms.CATEGORY_ID = #{categoryId}
+        AND ms.DEL_KBN=0
+        AND mc.DEL_KBN=0
+        ORDER BY ms.SHOP_ID ASC,ms.SHOP_NAME ASC
+    </select>
+
+</mapper>

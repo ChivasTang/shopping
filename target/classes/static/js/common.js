@@ -4,7 +4,8 @@ var commFunc = (function () {
     var setFun = {
 
         getLocale: function () {
-            var locale = $("#locale").text();
+            var locale = $("#locale").val();
+            console.log(locale);
             setFun.setLocale(locale);
         },
 
