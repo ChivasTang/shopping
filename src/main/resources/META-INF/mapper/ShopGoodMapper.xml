@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.flystone.shopping.dao.ShopGoodDao">
+    <select id="getOneShop"
+            parameterType="com.flystone.shopping.domain.ShopGoodDomain"
+            resultType="com.flystone.shopping.domain.ShopGoodDomain">
+        SELECT
+            SHOP_ID AS shopId
+            ,SHOP_NAME AS shopName
+        FROM m_shop
+        WHERE SHOP_ID=#{shopId}
+    </select>
+
+    <select id="getShopGoodList"
+            parameterType="com.flystone.shopping.domain.ShopGoodDomain"
+            resultType="com.flystone.shopping.domain.GoodDomain">
+        SELECT
+        SHOP_ID AS shopId
+        ,SHOP_NAME AS shopName
+        FROM m_shop
+        WHERE SHOP_ID=#{shopId}
+    </select>
+</mapper>
