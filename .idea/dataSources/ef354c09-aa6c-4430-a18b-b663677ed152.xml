@@ -1117,54 +1117,46 @@
       <DefaultExpression>2</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="262" parent="232" name="COUNTRY_ID">
+    <column id="262" parent="232" name="ORIGIN_ID">
       <Position>7</Position>
-      <Comment>国家唯一区分</Comment>
-      <DataType>bigint(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <DefaultExpression>1</DefaultExpression>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="263" parent="232" name="ORIGIN_ID">
-      <Position>8</Position>
       <Comment>地域唯一区分</Comment>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>1</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="264" parent="232" name="NOTE">
-      <Position>9</Position>
+    <column id="263" parent="232" name="NOTE">
+      <Position>8</Position>
       <Comment>備考</Comment>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="265" parent="232" name="ADD_USER">
-      <Position>10</Position>
+    <column id="264" parent="232" name="ADD_USER">
+      <Position>9</Position>
       <Comment>ADD_USER</Comment>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;商品&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="266" parent="232" name="ADD_DATE">
-      <Position>11</Position>
+    <column id="265" parent="232" name="ADD_DATE">
+      <Position>10</Position>
       <Comment>作成タイムスタンプ</Comment>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="267" parent="232" name="UP_USER">
-      <Position>12</Position>
+    <column id="266" parent="232" name="UP_USER">
+      <Position>11</Position>
       <Comment>ADD_USER</Comment>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;商品&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="268" parent="232" name="UP_DATE">
-      <Position>13</Position>
+    <column id="267" parent="232" name="UP_DATE">
+      <Position>12</Position>
       <Comment>更新タイムスタンプ</Comment>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
@@ -1172,20 +1164,20 @@
       <ColumnKind>normal</ColumnKind>
       <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
-    <column id="269" parent="232" name="DEL_KBN">
-      <Position>14</Position>
+    <column id="268" parent="232" name="DEL_KBN">
+      <Position>13</Position>
       <Comment>削除フラグ</Comment>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="270" parent="232" name="PRIMARY">
+    <key id="269" parent="232" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>GOOD_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="271" parent="233" name="MODEL_ID">
+    <column id="270" parent="233" name="MODEL_ID">
       <Position>1</Position>
       <Comment>商品種別唯一区分</Comment>
       <DataType>bigint(20)|0s</DataType>
@@ -1193,7 +1185,7 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="272" parent="233" name="MODEL_NAME">
+    <column id="271" parent="233" name="MODEL_NAME">
       <Position>2</Position>
       <Comment>商品種別名称</Comment>
       <DataType>varchar(50)|0s</DataType>
@@ -1201,7 +1193,7 @@
       <DefaultExpression>&apos;商品種別&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="273" parent="233" name="ADD_USER">
+    <column id="272" parent="233" name="ADD_USER">
       <Position>3</Position>
       <Comment>ADD_USER</Comment>
       <DataType>varchar(50)|0s</DataType>
@@ -1209,7 +1201,7 @@
       <DefaultExpression>&apos;商品種別&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="274" parent="233" name="ADD_DATE">
+    <column id="273" parent="233" name="ADD_DATE">
       <Position>4</Position>
       <Comment>作成タイムスタンプ</Comment>
       <DataType>timestamp|0s</DataType>
@@ -1217,7 +1209,7 @@
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="275" parent="233" name="UP_USER">
+    <column id="274" parent="233" name="UP_USER">
       <Position>5</Position>
       <Comment>ADD_USER</Comment>
       <DataType>varchar(50)|0s</DataType>
@@ -1225,7 +1217,7 @@
       <DefaultExpression>&apos;商品種別&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="276" parent="233" name="UP_DATE">
+    <column id="275" parent="233" name="UP_DATE">
       <Position>6</Position>
       <Comment>更新タイムスタンプ</Comment>
       <DataType>timestamp|0s</DataType>
@@ -1234,7 +1226,7 @@
       <ColumnKind>normal</ColumnKind>
       <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
-    <column id="277" parent="233" name="DEL_KBN">
+    <column id="276" parent="233" name="DEL_KBN">
       <Position>7</Position>
       <Comment>削除フラグ</Comment>
       <DataType>tinyint(1)|0s</DataType>
@@ -1242,12 +1234,12 @@
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="278" parent="233" name="PRIMARY">
+    <key id="277" parent="233" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>MODEL_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="279" parent="234" name="ORIGIN_ID">
+    <column id="278" parent="234" name="ORIGIN_ID">
       <Position>1</Position>
       <Comment>地域唯一区分</Comment>
       <DataType>bigint(20)|0s</DataType>
@@ -1255,7 +1247,7 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="280" parent="234" name="COUNTRY_ID">
+    <column id="279" parent="234" name="COUNTRY_ID">
       <Position>2</Position>
       <Comment>国家唯一区分</Comment>
       <DataType>bigint(20)|0s</DataType>
@@ -1263,7 +1255,7 @@
       <DefaultExpression>1</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="281" parent="234" name="ORIGIN_NAME">
+    <column id="280" parent="234" name="ORIGIN_NAME">
       <Position>3</Position>
       <Comment>地域名称</Comment>
       <DataType>varchar(50)|0s</DataType>
@@ -1271,7 +1263,7 @@
       <DefaultExpression>&apos;地域&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="282" parent="234" name="ADD_USER">
+    <column id="281" parent="234" name="ADD_USER">
       <Position>4</Position>
       <Comment>ADD_USER</Comment>
       <DataType>varchar(50)|0s</DataType>
@@ -1279,7 +1271,7 @@
       <DefaultExpression>&apos;地域&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="283" parent="234" name="ADD_DATE">
+    <column id="282" parent="234" name="ADD_DATE">
       <Position>5</Position>
       <Comment>作成タイムスタンプ</Comment>
       <DataType>timestamp|0s</DataType>
@@ -1287,7 +1279,7 @@
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="284" parent="234" name="UP_USER">
+    <column id="283" parent="234" name="UP_USER">
       <Position>6</Position>
       <Comment>ADD_USER</Comment>
       <DataType>varchar(50)|0s</DataType>
@@ -1295,7 +1287,7 @@
       <DefaultExpression>&apos;地域&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="285" parent="234" name="UP_DATE">
+    <column id="284" parent="234" name="UP_DATE">
       <Position>7</Position>
       <Comment>更新タイムスタンプ</Comment>
       <DataType>timestamp|0s</DataType>
@@ -1304,7 +1296,7 @@
       <ColumnKind>normal</ColumnKind>
       <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
-    <column id="286" parent="234" name="DEL_KBN">
+    <column id="285" parent="234" name="DEL_KBN">
       <Position>8</Position>
       <Comment>削除フラグ</Comment>
       <DataType>tinyint(1)|0s</DataType>
@@ -1312,12 +1304,12 @@
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="287" parent="234" name="PRIMARY">
+    <key id="286" parent="234" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ORIGIN_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="288" parent="235" name="REVIEWER_ID">
+    <column id="287" parent="235" name="REVIEWER_ID">
       <Position>1</Position>
       <Comment>評価者唯一区分</Comment>
       <DataType>bigint(20)|0s</DataType>
@@ -1325,7 +1317,7 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="289" parent="235" name="REVIEWER_NAME">
+    <column id="288" parent="235" name="REVIEWER_NAME">
       <Position>2</Position>
       <Comment>評価者の愛称</Comment>
       <DataType>varchar(50)|0s</DataType>
@@ -1333,7 +1325,7 @@
       <DefaultExpression>&apos;商品種別&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="290" parent="235" name="GENDER">
+    <column id="289" parent="235" name="GENDER">
       <Position>3</Position>
       <Comment>性別</Comment>
       <DataType>tinyint(1)|0s</DataType>
@@ -1341,7 +1333,7 @@
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="291" parent="235" name="BIRTHDAY">
+    <column id="290" parent="235" name="BIRTHDAY">
       <Position>4</Position>
       <Comment>生年月日</Comment>
       <DataType>date|0s</DataType>
@@ -1349,7 +1341,7 @@
       <DefaultExpression>&apos;2000-05-01&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="292" parent="235" name="ADD_USER">
+    <column id="291" parent="235" name="ADD_USER">
       <Position>5</Position>
       <Comment>ADD_USER</Comment>
       <DataType>varchar(50)|0s</DataType>
@@ -1357,7 +1349,7 @@
       <DefaultExpression>&apos;商品種別&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="293" parent="235" name="ADD_DATE">
+    <column id="292" parent="235" name="ADD_DATE">
       <Position>6</Position>
       <Comment>作成タイムスタンプ</Comment>
       <DataType>timestamp|0s</DataType>
@@ -1365,7 +1357,7 @@
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="294" parent="235" name="UP_USER">
+    <column id="293" parent="235" name="UP_USER">
       <Position>7</Position>
       <Comment>ADD_USER</Comment>
       <DataType>varchar(50)|0s</DataType>
@@ -1373,7 +1365,7 @@
       <DefaultExpression>&apos;商品種別&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="295" parent="235" name="UP_DATE">
+    <column id="294" parent="235" name="UP_DATE">
       <Position>8</Position>
       <Comment>更新タイムスタンプ</Comment>
       <DataType>timestamp|0s</DataType>
@@ -1382,7 +1374,7 @@
       <ColumnKind>normal</ColumnKind>
       <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
-    <column id="296" parent="235" name="DEL_KBN">
+    <column id="295" parent="235" name="DEL_KBN">
       <Position>9</Position>
       <Comment>削除フラグ</Comment>
       <DataType>tinyint(1)|0s</DataType>
@@ -1390,12 +1382,12 @@
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="297" parent="235" name="PRIMARY">
+    <key id="296" parent="235" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>REVIEWER_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="298" parent="236" name="SHOP_ID">
+    <column id="297" parent="236" name="SHOP_ID">
       <Position>1</Position>
       <Comment>販売店唯一区分</Comment>
       <DataType>bigint(20)|0s</DataType>
@@ -1403,7 +1395,7 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="299" parent="236" name="CATEGORY_ID">
+    <column id="298" parent="236" name="CATEGORY_ID">
       <Position>2</Position>
       <Comment>販売店が属する大分類唯一区分</Comment>
       <DataType>bigint(20)|0s</DataType>
@@ -1411,7 +1403,7 @@
       <DefaultExpression>1</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="300" parent="236" name="SHOP_NAME">
+    <column id="299" parent="236" name="SHOP_NAME">
       <Position>3</Position>
       <Comment>販売店名称</Comment>
       <DataType>varchar(50)|0s</DataType>
@@ -1419,7 +1411,7 @@
       <DefaultExpression>&apos;販売店&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="301" parent="236" name="ADD_USER">
+    <column id="300" parent="236" name="ADD_USER">
       <Position>4</Position>
       <Comment>ADD_USER</Comment>
       <DataType>varchar(50)|0s</DataType>
@@ -1427,7 +1419,7 @@
       <DefaultExpression>&apos;販売店&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="302" parent="236" name="ADD_DATE">
+    <column id="301" parent="236" name="ADD_DATE">
       <Position>5</Position>
       <Comment>作成タイムスタンプ</Comment>
       <DataType>timestamp|0s</DataType>
@@ -1435,7 +1427,7 @@
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="303" parent="236" name="UP_USER">
+    <column id="302" parent="236" name="UP_USER">
       <Position>6</Position>
       <Comment>ADD_USER</Comment>
       <DataType>varchar(50)|0s</DataType>
@@ -1443,7 +1435,7 @@
       <DefaultExpression>&apos;販売店&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="304" parent="236" name="UP_DATE">
+    <column id="303" parent="236" name="UP_DATE">
       <Position>7</Position>
       <Comment>更新タイムスタンプ</Comment>
       <DataType>timestamp|0s</DataType>
@@ -1452,7 +1444,7 @@
       <ColumnKind>normal</ColumnKind>
       <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
-    <column id="305" parent="236" name="DEL_KBN">
+    <column id="304" parent="236" name="DEL_KBN">
       <Position>8</Position>
       <Comment>削除フラグ</Comment>
       <DataType>tinyint(1)|0s</DataType>
@@ -1460,12 +1452,12 @@
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="306" parent="236" name="PRIMARY">
+    <key id="305" parent="236" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>SHOP_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="307" parent="237" name="PICTURE_ID">
+    <column id="306" parent="237" name="PICTURE_ID">
       <Position>1</Position>
       <Comment>商品種別写真の唯一区分</Comment>
       <DataType>bigint(20)|0s</DataType>
@@ -1473,7 +1465,7 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="308" parent="237" name="GOOD_ID">
+    <column id="307" parent="237" name="GOOD_ID">
       <Position>2</Position>
       <Comment>商品唯一区分</Comment>
       <DataType>bigint(20)|0s</DataType>
@@ -1481,7 +1473,7 @@
       <DefaultExpression>1</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="309" parent="237" name="TITLE">
+    <column id="308" parent="237" name="TITLE">
       <Position>3</Position>
       <Comment>写真タイトル</Comment>
       <DataType>varchar(50)|0s</DataType>
@@ -1489,13 +1481,13 @@
       <DefaultExpression>&apos;写真タイトル&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="310" parent="237" name="DESCRIPTION">
+    <column id="309" parent="237" name="DESCRIPTION">
       <Position>4</Position>
       <Comment>写真説明文</Comment>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="311" parent="237" name="PICTURE_DEST">
+    <column id="310" parent="237" name="PICTURE_DEST">
       <Position>5</Position>
       <Comment>写真パス</Comment>
       <DataType>varchar(255)|0s</DataType>
@@ -1503,7 +1495,7 @@
       <DefaultExpression>&apos;写真&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="312" parent="237" name="ADD_USER">
+    <column id="311" parent="237" name="ADD_USER">
       <Position>6</Position>
       <Comment>ADD_USER</Comment>
       <DataType>varchar(50)|0s</DataType>
@@ -1511,7 +1503,7 @@
       <DefaultExpression>&apos;写真&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="313" parent="237" name="ADD_DATE">
+    <column id="312" parent="237" name="ADD_DATE">
       <Position>7</Position>
       <Comment>作成タイムスタンプ</Comment>
       <DataType>timestamp|0s</DataType>
@@ -1519,7 +1511,7 @@
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="314" parent="237" name="UP_USER">
+    <column id="313" parent="237" name="UP_USER">
       <Position>8</Position>
       <Comment>ADD_USER</Comment>
       <DataType>varchar(50)|0s</DataType>
@@ -1527,7 +1519,7 @@
       <DefaultExpression>&apos;写真&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="315" parent="237" name="UP_DATE">
+    <column id="314" parent="237" name="UP_DATE">
       <Position>9</Position>
       <Comment>更新タイムスタンプ</Comment>
       <DataType>timestamp|0s</DataType>
@@ -1536,7 +1528,7 @@
       <ColumnKind>normal</ColumnKind>
       <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
-    <column id="316" parent="237" name="DEL_KBN">
+    <column id="315" parent="237" name="DEL_KBN">
       <Position>10</Position>
       <Comment>削除フラグ</Comment>
       <DataType>tinyint(1)|0s</DataType>
@@ -1544,12 +1536,12 @@
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="317" parent="237" name="PRIMARY">
+    <key id="316" parent="237" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>PICTURE_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="318" parent="238" name="REVIEWER_ID">
+    <column id="317" parent="238" name="REVIEWER_ID">
       <Position>1</Position>
       <Comment>評価者唯一区分</Comment>
       <DataType>bigint(20)|0s</DataType>
@@ -1557,7 +1549,7 @@
       <DefaultExpression>1</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="319" parent="238" name="GOOD_ID">
+    <column id="318" parent="238" name="GOOD_ID">
       <Position>2</Position>
       <Comment>商品唯一区分</Comment>
       <DataType>bigint(20)|0s</DataType>
@@ -1565,7 +1557,7 @@
       <DefaultExpression>1</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="320" parent="238" name="REVIEW_SCORE_1">
+    <column id="319" parent="238" name="REVIEW_SCORE_1">
       <Position>3</Position>
       <Comment>評価項目1</Comment>
       <DataType>tinyint(4)|0s</DataType>
@@ -1573,7 +1565,7 @@
       <DefaultExpression>5</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="321" parent="238" name="REVIEW_SCORE_2">
+    <column id="320" parent="238" name="REVIEW_SCORE_2">
       <Position>4</Position>
       <Comment>評価項目2</Comment>
       <DataType>tinyint(4)|0s</DataType>
@@ -1581,7 +1573,7 @@
       <DefaultExpression>5</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="322" parent="238" name="REVIEW_SCORE_3">
+    <column id="321" parent="238" name="REVIEW_SCORE_3">
       <Position>5</Position>
       <Comment>評価項目3</Comment>
       <DataType>tinyint(4)|0s</DataType>
@@ -1589,7 +1581,7 @@
       <DefaultExpression>5</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="323" parent="238" name="REVIEW_SCORE_4">
+    <column id="322" parent="238" name="REVIEW_SCORE_4">
       <Position>6</Position>
       <Comment>評価項目4</Comment>
       <DataType>tinyint(4)|0s</DataType>
@@ -1597,7 +1589,7 @@
       <DefaultExpression>5</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="324" parent="238" name="REVIEW_SCORE_5">
+    <column id="323" parent="238" name="REVIEW_SCORE_5">
       <Position>7</Position>
       <Comment>評価項目5</Comment>
       <DataType>tinyint(4)|0s</DataType>
@@ -1605,13 +1597,13 @@
       <DefaultExpression>5</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="325" parent="238" name="COMMENT">
+    <column id="324" parent="238" name="COMMENT">
       <Position>8</Position>
       <Comment>評価コメント</Comment>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="326" parent="238" name="ADD_USER">
+    <column id="325" parent="238" name="ADD_USER">
       <Position>9</Position>
       <Comment>ADD_USER</Comment>
       <DataType>varchar(50)|0s</DataType>
@@ -1619,7 +1611,7 @@
       <DefaultExpression>&apos;評価&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="327" parent="238" name="ADD_DATE">
+    <column id="326" parent="238" name="ADD_DATE">
       <Position>10</Position>
       <Comment>作成タイムスタンプ</Comment>
       <DataType>timestamp|0s</DataType>
@@ -1627,7 +1619,7 @@
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="328" parent="238" name="UP_USER">
+    <column id="327" parent="238" name="UP_USER">
       <Position>11</Position>
       <Comment>ADD_USER</Comment>
       <DataType>varchar(50)|0s</DataType>
@@ -1635,7 +1627,7 @@
       <DefaultExpression>&apos;評価&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="329" parent="238" name="UP_DATE">
+    <column id="328" parent="238" name="UP_DATE">
       <Position>12</Position>
       <Comment>更新タイムスタンプ</Comment>
       <DataType>timestamp|0s</DataType>
@@ -1644,7 +1636,7 @@
       <ColumnKind>normal</ColumnKind>
       <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
-    <column id="330" parent="238" name="DEL_KBN">
+    <column id="329" parent="238" name="DEL_KBN">
       <Position>13</Position>
       <Comment>削除フラグ</Comment>
       <DataType>tinyint(1)|0s</DataType>
@@ -1652,13 +1644,13 @@
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="331" parent="238" name="PRIMARY">
+    <key id="330" parent="238" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>REVIEWER_ID
 GOOD_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="332" parent="239" name="SHOP_ID">
+    <column id="331" parent="239" name="SHOP_ID">
       <Position>1</Position>
       <Comment>販売店唯一区分</Comment>
       <DataType>bigint(20)|0s</DataType>
@@ -1666,7 +1658,7 @@ GOOD_ID</ColNames>
       <DefaultExpression>1</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="333" parent="239" name="GOOD_ID">
+    <column id="332" parent="239" name="GOOD_ID">
       <Position>2</Position>
       <Comment>商品唯一区分</Comment>
       <DataType>bigint(20)|0s</DataType>
@@ -1674,7 +1666,7 @@ GOOD_ID</ColNames>
       <DefaultExpression>1</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="334" parent="239" name="ADD_USER">
+    <column id="333" parent="239" name="ADD_USER">
       <Position>3</Position>
       <Comment>ADD_USER</Comment>
       <DataType>varchar(50)|0s</DataType>
@@ -1682,7 +1674,7 @@ GOOD_ID</ColNames>
       <DefaultExpression>&apos;shop_good&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="335" parent="239" name="ADD_DATE">
+    <column id="334" parent="239" name="ADD_DATE">
       <Position>4</Position>
       <Comment>作成タイムスタンプ</Comment>
       <DataType>timestamp|0s</DataType>
@@ -1690,7 +1682,7 @@ GOOD_ID</ColNames>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="336" parent="239" name="UP_USER">
+    <column id="335" parent="239" name="UP_USER">
       <Position>5</Position>
       <Comment>ADD_USER</Comment>
       <DataType>varchar(50)|0s</DataType>
@@ -1698,7 +1690,7 @@ GOOD_ID</ColNames>
       <DefaultExpression>&apos;shop_good&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="337" parent="239" name="UP_DATE">
+    <column id="336" parent="239" name="UP_DATE">
       <Position>6</Position>
       <Comment>更新タイムスタンプ</Comment>
       <DataType>timestamp|0s</DataType>
@@ -1707,7 +1699,7 @@ GOOD_ID</ColNames>
       <ColumnKind>normal</ColumnKind>
       <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
-    <column id="338" parent="239" name="DEL_KBN">
+    <column id="337" parent="239" name="DEL_KBN">
       <Position>7</Position>
       <Comment>削除フラグ</Comment>
       <DataType>tinyint(1)|0s</DataType>
@@ -1715,7 +1707,7 @@ GOOD_ID</ColNames>
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="339" parent="239" name="PRIMARY">
+    <key id="338" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>SHOP_ID
 GOOD_ID</ColNames>

@@ -5,7 +5,6 @@ var commFunc = (function () {
 
         getLocale: function () {
             var locale = $("#locale").val();
-            console.log(locale);
             setFun.setLocale(locale);
         },
 
@@ -35,7 +34,7 @@ var commFunc = (function () {
     };
     return {
         setFun: setFun
-    }
+    };
 })();
 
 $(function () {

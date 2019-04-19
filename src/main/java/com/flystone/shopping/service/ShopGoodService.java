@@ -1,7 +1,11 @@
 package com.flystone.shopping.service;
 
-import com.flystone.shopping.domain.ShopDomain;
+import com.flystone.shopping.domain.GoodDomain;
+import com.flystone.shopping.domain.ShopGoodDomain;
 
-public interface ShopService {
-    ShopDomain getOneShop(ShopDomain param);
+import java.util.List;
+
+public interface ShopGoodService {
+    ShopGoodDomain getOneShop(ShopGoodDomain param);
+    List<GoodDomain> getGoodList(ShopGoodDomain param);
 }

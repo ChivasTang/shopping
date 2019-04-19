@@ -1,9 +1,13 @@
 package com.flystone.shopping.dao;
 
-import com.flystone.shopping.domain.ShopDomain;
+import com.flystone.shopping.domain.GoodDomain;
+import com.flystone.shopping.domain.ShopGoodDomain;
 import org.springframework.stereotype.Repository;
 
-@Repository("shopDao")
-public interface ShopDao {
-    ShopDomain getOneShop(ShopDomain param);
+import java.util.List;
+
+@Repository("shopGoodDao")
+public interface ShopGoodDao {
+    ShopGoodDomain getOneShop(ShopGoodDomain param);
+    List<GoodDomain> getGoodList(ShopGoodDomain param);
 }

@@ -24,8 +24,13 @@
     <link rel="icon" type="image/x-icon" href="/static/image/favicon.ico"/>
 </head>
 <body>
-<label class="none" for="locale"><input id="locale" class="none" type="hidden" th:value="${locale}"/></label>
+<div class="none">
+    <input id="locale" type="hidden" th:value="${locale}"/>
+    <input id="selectedShop" type="hidden" value=""/>
+</div>
+
 <div id="category-header" data-role="view" data-title="category">
+
     <header data-role="header">
         <div data-role="navbar">
             <a data-align="left" data-role="button" href="javascript:void(0)" data-rel="drawer"
@@ -34,12 +39,11 @@
                 <li>大分類1</li>
                 <li>大分類2</li>
             </ul>
-            <a data-align="right" data-role="button" data-click="showSearch" data-click-on="down" data-icon="search"></a>
+            <a href="javascript:void(0)" data-align="right" data-role="button" data-icon="home"></a>
         </div>
     </header>
 
     <ul id="categoryShop-listView" class="main-menu" data-role="listview"></ul>
-
 </div>
 
 

@@ -8,7 +8,7 @@ var indexLoader = (function () {
     var setFun = {
         //url
         getCategoryShopListURL: "getCategoryShopList",
-        getShopListURL: "getShopList",
+        loadGoodListPageURL: "loadGoodListPage?shopId=",
 
         getCategoryShopList: function () {
             $("#categoryShop-listView").kendoMobileListView({
@@ -38,15 +38,18 @@ var indexLoader = (function () {
                 },
                 pullToRefresh: true,
                 endlessScroll: true,
-                template: '<a href="javascript:void(0)" style="color:rgb(0,0,0);">#=data.shopName#</a>',
-                click: function (e) {
-                    e.preventDefault();
-                    console.log(setFun.getCategoryShopListURL + "?shopId=" + e.dataItem.shopId);
-                    return false;
+                template: '<a href="'+setFun.loadGoodListPageURL+'#=data.shopId#" style="color:rgb(0,0,0);">#=data.shopName#</a>',
+                filterable:{
+                    placeholder: "商店名で検索...",
+                    ignoreCase: true,
+                    field:"shopName",
+                    operator:"contains"
+                },
+                click:function (e) {
+                    $("#selectedShop").val(e.dataItem.shopId);
                 }
             });
         },
-
 
         pageReady: function () {
             setFun.getCategoryShopList();
@@ -54,7 +57,7 @@ var indexLoader = (function () {
     };
     return {
         setFun: setFun
-    }
+    };
 })();
 
 $(function () {
