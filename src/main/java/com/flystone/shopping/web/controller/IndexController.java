@@ -1,11 +1,9 @@
 package com.flystone.shopping.web.controller;
 
 import com.flystone.shopping.domain.CategoryShopDomain;
-import com.flystone.shopping.domain.GoodDomain;
 import com.flystone.shopping.domain.ShopGoodDomain;
 import com.flystone.shopping.service.CategoryShopService;
 import com.flystone.shopping.service.ShopGoodService;
-import org.springframework.http.MediaType;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
@@ -54,6 +52,14 @@ public class IndexController {
         ShopGoodDomain shopGood=shopGoodService.getOneShop(param);
         shopGood.setGoodList(shopGoodService.getGoodList(shopGood));
         return shopGood;
+    }
+
+    @RequestMapping(value = "/loadGoodDetail", method = RequestMethod.GET)
+    public ModelAndView loadGoodDetail(@RequestParam("goodId") Long goodId, HttpServletRequest req, HttpServletResponse res, Model model){
+        ModelAndView mv=new ModelAndView("good/goodDetail");
+        mv.addObject("locale","ja");
+        mv.addObject("selectedGood", goodId);
+        return mv;
     }
 
 }

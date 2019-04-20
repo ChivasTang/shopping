@@ -6,6 +6,7 @@ SELECT * FROM m_origin;
 SELECT * FROM m_good;
 
 
+
 SELECT
 ms.SHOP_ID AS shopId
 ,ms.SHOP_NAME AS shopName

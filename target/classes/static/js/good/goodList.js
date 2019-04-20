@@ -7,6 +7,7 @@ window.app = new kendo.mobile.Application($(document.body), {
 var goodPageLoader = (function () {
     var setFun = {
         getShopGoodListURL:"getShopGoodList",
+        loadGoodDetailURL:"loadGoodDetail?goodId=",
 
         getShopGoodList: function(){
 
@@ -76,7 +77,10 @@ var goodPageLoader = (function () {
                     field:"goodName",
                     operator:"contains"
                 },
-                sortable:true
+                sortable:true,
+                click: function (e) {
+                    window.location.href=setFun.loadGoodDetailURL+e.dataItem.goodId;
+                }
             });
         },
 
