@@ -41,6 +41,7 @@ public class IndexController {
     @RequestMapping(value = "/loadGoodListPage", method = RequestMethod.GET)
     public ModelAndView loadGoodListPage(@RequestParam("shopId") Long shopId, HttpServletRequest req, HttpServletResponse res, Model model ){
         ModelAndView mv=new ModelAndView("good/goodList");
+        mv.addObject("locale","ja");
         mv.addObject("selectedShop", shopId);
         return mv;
     }

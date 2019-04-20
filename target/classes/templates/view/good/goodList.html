@@ -1,16 +1,60 @@
+<!DOCTYPE html>
 <html lang="ja" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>SHOPPING | 2019</title>
+
+    <link type="text/css" rel="stylesheet" href="/static/css/lib/kendo/kendo.common.min.css" media="all"/>
+    <link type="text/css" rel="stylesheet" href="/static/css/lib/kendo/kendo.rtl.min.css" media="all"/>
+    <link type="text/css" rel="stylesheet" href="/static/css/lib/kendo/kendo.silver.min.css" media="all"/>
+    <link type="text/css" rel="stylesheet" href="/static/css/lib/kendo/kendo.mobile.all.min.css" media="all"/>
+    <link type="text/css" rel="stylesheet" href="/static/css/common.css" media="all"/>
+
+    <script type="text/javascript" src="/static/js/lib/jquery.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/static/js/lib/jszip.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/static/js/lib/jquery.i18n.properties.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/static/js/lib/kendo.all.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/static/js/common.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/static/js/good/goodList.js" charset="UTF-8"></script>
+    <link rel="icon" type="image/x-icon" href="/static/image/favicon.ico"/>
+</head>
 <body>
-<script type="text/javascript" src="/static/js/good/goodList.js" charset="UTF-8"></script>
+<div class="none">
+    <input id="locale" type="hidden" th:value="${locale}"/>
+    <input id="selectedShop" type="hidden" th:value="${selectedShop}"/>
+</div>
+
+
 <div id="shop-header" data-role="view" data-title="">
     <header data-role="header">
         <div data-role="navbar">
-            <a data-align="left" data-icon="arrow-w" href="#" data-role="backbutton" data-transition="slide reverse"></a>
+            <a data-align="left" data-icon="arrow-w" href="#" data-role="backbutton"
+               data-transition="slide reverse"></a>
             <a id="shopBtn" data-role="button" data-animated="false"></a>
             <a href="#" data-align="right" data-role="button" data-icon="home"></a>
         </div>
     </header>
-
+    <ul id="good-sort-btnGroup">
+        <li>低い順</li>
+        <li>高い順</li>
+        <li>評価順</li>
+    </ul>
     <ul id="good-listView" class="main-menu" data-role="listview"></ul>
+
+    <script id="good-listView-tmp" type="text/x-kendo-template">
+        <a >
+            <h4>#: goodName # </h4>
+            <p>原産地: #: countryName ##: originName #</p>
+            <p>#: kendo.toString(price,"c0") # 米ドル</p>
+        </a>
+    </script>
 </div>
+
+
 </body>
 </html>

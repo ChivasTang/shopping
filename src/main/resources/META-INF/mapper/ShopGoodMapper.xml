@@ -15,15 +15,16 @@
             parameterType="com.flystone.shopping.domain.ShopGoodDomain"
             resultType="com.flystone.shopping.domain.GoodDomain">
         SELECT
-        mg.GOOD_ID
-        ,mg.GOOD_NAME
-        ,mg.PRICE
-        ,mo.COUNTRY_ID
-        ,mc.COUNTRY_NAME
-        ,mo.ORIGIN_ID
-        ,ORIGIN_NAME
+        mg.SHOP_ID AS shopId
+        ,mg.GOOD_ID AS goodId
+        ,mg.GOOD_NAME AS goodName
+        ,mg.PRICE AS price
+        ,mg.ORIGIN_ID AS originId
+        ,mo.ORIGIN_NAME AS originName
+        ,mo.COUNTRY_ID AS countryId
+        ,mc.COUNTRY_NAME AS countryName
         FROM m_good AS mg
-        INNER JOIN m_origin AS mo ON mg.ORIGIN_ID=mo.COUNTRY_ID
+        INNER JOIN m_origin AS mo ON mg.ORIGIN_ID=mo.ORIGIN_ID
         INNER JOIN m_country AS mc ON mo.COUNTRY_ID=mc.COUNTRY_ID
         WHERE SHOP_ID=#{shopId}
     </select>

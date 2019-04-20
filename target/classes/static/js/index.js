@@ -38,7 +38,7 @@ var indexLoader = (function () {
                 },
                 pullToRefresh: true,
                 endlessScroll: true,
-                template: '<a href="'+setFun.loadGoodListPageURL+'#=data.shopId#" style="color:rgb(0,0,0);">#=data.shopName#</a>',
+                template: '<a style="color:rgb(0,0,0);">#=data.shopName#</a>',
                 filterable:{
                     placeholder: "商店名で検索...",
                     ignoreCase: true,
@@ -46,7 +46,7 @@ var indexLoader = (function () {
                     operator:"contains"
                 },
                 click:function (e) {
-                    $("#selectedShop").val(e.dataItem.shopId);
+                    window.location.href=setFun.loadGoodListPageURL+e.dataItem.shopId;
                 }
             });
         },
